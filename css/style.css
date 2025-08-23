@@ -79,6 +79,17 @@
 }
 
 
+a.no-hover:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+
+
+
+
+
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
