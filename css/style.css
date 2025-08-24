@@ -100,6 +100,40 @@ a.no-hover:hover {
     background-color: #6c757d;    
 }
 
+
+.green-item .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='green' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 991.98px) { 
+    #mainHeader {
+        padding-top: 30px;  
+        padding-bottom: 30px;
+    }
+}
+
+.footer-logo {
+    width: 25% !important; 
+    max-width: 100% !important; 
+}
+
+@media (max-width: 768px) {
+    .footer-logo {
+        width: 50% !important; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -437,6 +471,7 @@ textarea:focus {
   opacity: 1;
   visibility: visible;
 }
+/*
 .sticky-menu {
   position: fixed;
   top: 0;
@@ -474,6 +509,7 @@ textarea:focus {
 .sticky-menu .main-menu ul li.active a::before {
   bottom: 24px;
 }
+  */
 .main-menu ul li {
   display: inline-block;
   margin-left: 30px;
