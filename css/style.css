@@ -74,6 +74,25 @@
 	background-color: #205a4d !important;
 }
 
+/* Improved color contrast for better readability */
+.text-secondary {
+    color: #b8bcc8 !important; /* Lighter gray for better contrast on dark background */
+}
+
+.text-danger {
+    color: #ff6b7a !important; /* Softer red that's less harsh but still visible */
+}
+
+a.text-secondary:focus,
+a.text-secondary:hover {
+    color: #d4d7e0 !important; /* Even lighter on hover */
+}
+
+a.text-danger:focus,
+a.text-danger:hover {
+    color: #ff8a96 !important; /* Softer red on hover */
+}
+
 .height-card{
   height: 550px !important;
 }
