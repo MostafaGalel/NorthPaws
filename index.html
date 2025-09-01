@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
@@ -136,11 +136,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3HQP4L7EN"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-Q3HQP4L7EN');
+        gtag('config', 'G-Q3HQP4L7EN');
     </script>
 </head>
 
@@ -205,10 +205,13 @@
 
                             <div class="col-6 col-md-6 col-lg-3 d-flex justify-content-end align-items-center">
 
+                                <button id="btnEn" class="langalel-btn">En</button>
+                                <button id="btnAr" class="langalel-btn">Ar</button>
                                 <a href="https://wa.me/+966545705956" target="_blank"
-                                    class="btn theme-bg mr-2 d-none d-sm-inline-block">
+                                    class="btn theme-bg mr-3 ml-3 d-none d-sm-inline-block">
                                     Call Now
                                 </a>
+
 
                                 <button class="navbar-toggler d-block d-lg-none ml-2 green-item" type="button"
                                     data-toggle="collapse" data-target="#mobileMenu" aria-expanded="false"
@@ -835,6 +838,41 @@
     </div>
 
     <!-- All js here -->
+    <script>
+        const btnAr = document.getElementById("btnAr");
+        const btnEn = document.getElementById("btnEn");
+
+        // دالة تحديث اللغة
+        function updateLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+            // تغيير النصوص
+            document.querySelectorAll("[data-en]").forEach(el => {
+                el.textContent = el.getAttribute(`data-${lang}`);
+            });
+
+            // تغيير الخط حسب اللغة
+            if (lang === "ar") {
+                document.body.style.fontFamily = "'Cairo', 'Tahoma', sans-serif";
+            } else {
+                document.body.style.fontFamily = "'Poppins', 'Arial', sans-serif";
+            }
+        }
+
+        // أحداث الأزرار
+        btnAr.addEventListener("click", () => updateLanguage("ar"));
+        btnEn.addEventListener("click", () => updateLanguage("en"));
+    </script>
+
+
+
+
+
+
+
+
+
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
