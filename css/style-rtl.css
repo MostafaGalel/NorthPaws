@@ -1,0 +1,149 @@
+/* =========================
+   RTL Fixes for Arabic Mode
+   ========================= */
+
+
+
+   
+
+body[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* القوائم في الهيدر */
+body[dir="rtl"] .header .main-menu ul {
+  flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .header .main-menu ul li {
+  margin-inline: 10px;
+}
+
+/* النصوص */
+body[dir="rtl"] p,
+body[dir="rtl"] li,
+body[dir="rtl"] h1,
+body[dir="rtl"] h2,
+body[dir="rtl"] h3,
+body[dir="rtl"] h4,
+body[dir="rtl"] h5,
+body[dir="rtl"] h6 {
+  text-align: right ;
+}
+
+/* أي عنصر واخد class text-left */
+body[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+/* أي عنصر واخد class text-right */
+body[dir="rtl"] .text-right {
+  text-align: left ;
+}
+
+/* ====== الخريطة ====== */
+
+/* سكشن About */
+body[dir="rtl"] #about .col-xl-5 {
+  margin: 0 !important;
+  padding: 0 !important;
+  float: left !important;
+}
+
+body[dir="rtl"] #about iframe {
+  display: block;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* سكشن Contact */
+body[dir="rtl"] #contact .col-xl-5 {
+  margin: 0 !important;
+  padding: 0 !important;
+  float: left !important;
+}
+
+body[dir="rtl"] #contact iframe {
+  display: block;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* ====== الخدمات ====== */
+body[dir="rtl"] .single-service .ser-icon {
+  margin-inline-start: 0 !important;
+  margin-inline-end: 25px !important;
+}
+
+body[dir="rtl"] .service-text ul {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+/* ====== الفوتر ====== */
+body[dir="rtl"] .footer-widget,
+body[dir="rtl"] .footer-subscribe,
+body[dir="rtl"] .footer-address {
+  text-align: right;
+}
+
+/*
+body[dir="rtl"] .footer-address li {
+  flex-direction: row-reverse;
+}
+*/
+body[dir="rtl"] .footer-address li .f-icon {
+  margin-inline-start: 10px;
+  margin-inline-end: 0;
+}
+
+
+
+
+
+
+body[dir="rtl"] #about .map-col {
+  margin: 0 !important;
+  padding: 0 !important;
+  float: left !important;
+}
+
+body[dir="rtl"] #about .map-col iframe {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  display: block;
+}
+
+
+.text-center-fixed {
+  text-align: center !important;
+}
+
+/* تعريف الخط GE SS Two Medium */
+@font-face {
+  font-family: 'GE SS Two Medium';
+  src: url('../fonts/GE_SS_Two_Medium.woff2') format('woff2'),
+       url('../fonts/GE_SS_Two_Medium.woff') format('woff'),
+       url('../fonts/GE_SS_Two_Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* تطبيق الخط العربي لما الاتجاه RTL */
+body[dir="rtl"] {
+  font-family: 'GE SS Two Medium', Arial, sans-serif !important;
+}
+
+
+body[dir="rtl"] .footer-address .f-icon,
+body[dir="rtl"] .service-text .f-icon,
+body[dir="rtl"] ul li > i {
+  margin-left: 10px !important;  /* مسافة على الشمال */
+  margin-right: 0 !important;    /* شيل المسافة القديمة */
+}
+
+body[dir="rtl"] .f-icon {
+  margin-right: 0.5rem !important;        /* شيل المسافة يمين */
+  margin-left: 0.5rem !important;    /* ضيف مسافة شمال */
+}

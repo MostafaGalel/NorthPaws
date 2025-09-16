@@ -30,6 +30,75 @@
 -------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
+
+.text-center-fixed {
+  text-align: center !important;
+}
+
+ul, ol {
+  list-style: disc !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ul li, ol li {
+  display: list-item !important;
+  list-style-type: disc !important;
+}
+
+
+ul.list-unstyled,
+ul.d-flex {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+ul.list-unstyled li,
+ul.d-flex li {
+  list-style: none !important;
+}
+
+ul {
+  list-style: disc !important;
+  padding-inline-start: 20px !important;
+}
+
+/* استثناء: القوائم الرئيسية للخدمات */
+ul.service-text {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* الاستثناء ينطبق برضه على العناصر اللي جواها */
+ul.service-text > li {
+  list-style: none !important;
+}
+
+/* UL الصغيرة داخل الخدمة (زي Easy Access) */
+ul.service-text ul {
+  list-style: disc !important;        /* رجّع البولت */
+  padding-inline-start: 20px !important;
+}
+
+ul.service-text ul li {
+  display: list-item !important;      /* يضمن إن البولت يظهر */
+  list-style-type: disc !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .same-line {
   list-style: none;
   margin: 0;
@@ -169,7 +238,9 @@ a.no-hover:hover {
 
 
 
-
+.text-center-fixed {
+  text-align: center !important;
+}
 
 
 
@@ -1399,3 +1470,5 @@ body:hover #scroll a {
 .slider3-left-dotted {
   top: 24%;
 }
+
+
