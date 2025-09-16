@@ -122,12 +122,12 @@ body[dir="rtl"] #about .map-col iframe {
 
 /* تعريف الخط GE SS Two Medium */
 @font-face {
-  font-family: 'GE SS Two Medium';
-  src: url('../fonts/GE_SS_Two_Light.otf') format('woff2'), !important
+  font-family: 'GE SS Two Medium'; 
+  src: url('../fonts/GE_SS_Two_Light.otf') format('woff2'),
        url('../fonts/GE_SS_Two_Medium.woff') format('woff'),
        url('../fonts/GE_SS_Two_Medium.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
+  font-style: normal; 
 }
 
 /* تطبيق الخط العربي لما الاتجاه RTL */
@@ -151,3 +151,66 @@ body[dir="rtl"] .f-icon {
 .footer-div-right{
   margin-right: auto;
 }
+
+@media (max-width: 767px) {
+    #langBtn,
+    .desktop-call-btn {
+        display: none !important;
+    }
+}
+
+/* نخلي الزرار جوه الـ burger menu يظهر على الموبايل بالكامل */
+#mobileMenu .btn {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+
+@media (max-width: 991px) {
+    #langBtn {
+        display: none !important;
+    }
+}
+
+/* زر اللغة داخل البرجر منيو يظل ظاهر */
+#mobileMenu #langBtnMobile {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+@media (max-width: 991px) {
+    .greenbardisapper {
+        display: none !important;
+    }
+}
+
+
+
+.map-col {
+    position: relative;
+    width: 100%;
+    padding-bottom: 35%; /* نسبة 16:9 */
+    height: auto;
+}
+
+/* iframe يغطي الديف */
+.map-col iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+@media (max-width: 991px) {
+    .map-col {
+        padding-bottom: 75%; /* زيادة الطول للخريطة على الموبايل */
+    }
+}
+
+
+
