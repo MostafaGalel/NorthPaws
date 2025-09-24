@@ -219,6 +219,9 @@
 
 
                                 <!-- Burger Menu Button -->
+                                <button id="langBtnMobile" class="btn theme-bg  d-block d-lg-none ml-2"
+                                    type="button">لغة</button>
+
                                 <button class="navbar-toggler d-block d-lg-none ml-2 green-item" type="button"
                                     data-toggle="collapse" data-target="#mobileMenu" aria-expanded="false"
                                     aria-label="Toggle navigation">
@@ -229,14 +232,13 @@
                             <!-- Mobile Menu (hidden by default, appears on toggle) -->
                             <div class="collapse d-lg-none w-100" id="mobileMenu">
                                 <ul class="list-unstyled d-flex flex-column">
-                                    <li><a href="#Services" class="darkgreen-item" data-en="Services"
-                                            data-ar="خدماتنا">Services</a></li>
-                                    <li><a href="#Contact" class="darkgreen-item" data-en="Contact"
-                                            data-ar="تواصل معنا">Contact</a></li>
-
-                                    <!-- Buttons inside mobile menu -->
                                     <li class="my-2">
-                                        <button id="langBtnMobile" class="btn theme-bg w-100">لغة</button>
+                                        <a href="#Services" class="btn theme-bg w-100" data-en="Services"
+                                            data-ar="خدماتنا">Services</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#Contact" class="btn theme-bg w-100" data-en="Contact"
+                                            data-ar="تواصل معنا">Contact</a>
                                     </li>
                                     <li class="my-2">
                                         <a href="https://wa.me/+966545705956" target="_blank" class="btn theme-bg w-100"
@@ -793,7 +795,8 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-start mb-4">
                             <div class="footer-widget f-adress mt-30">
-                                <img src="images/logo/North-Logo-01 - half-white.png" alt="" class="w-75 langImagewhite">
+                                <img src="images/logo/North-Logo-01 - half-white.png" alt=""
+                                    class="w-75 langImagewhite">
                                 <ul class="footer-address">
                                     <li class="d-flex align-items-start">
                                         <div>
@@ -985,7 +988,7 @@
                     img.src = newLang === "ar" ? "images/logo/North-Logo-01-Ar.png" : "images/logo/North-Logo-01.png";
                 });
 
-                 document.querySelectorAll(".langImagewhite").forEach(img => {
+                document.querySelectorAll(".langImagewhite").forEach(img => {
                     img.src = newLang === "ar" ? "images/logo/North-Logo-01-Ar - Whte.png" : "images/logo/North-Logo-01 - half-white.png";
                 });
 
