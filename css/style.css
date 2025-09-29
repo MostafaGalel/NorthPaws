@@ -1472,3 +1472,67 @@ body:hover #scroll a {
 }
 
 
+/* أقل من 992 */
+
+@media (max-width: 991px) {
+  .logo img {
+    max-width: 250px;
+  }
+  #langBtn, 
+  #langBtnMobile {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+}
+
+
+
+/* أقل من 480 */
+@media (max-width: 450px) {
+  .logo img {
+    max-width: 200px;
+  }
+  #langBtn, 
+  #langBtnMobile {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+}
+
+/* أقل من 400 */
+@media (max-width: 400px) {
+  .logo img {
+    max-width: 180px;
+  }
+  #langBtn, 
+  #langBtnMobile {
+    font-size: 13px;
+    padding: 5px 14px;
+  }
+}
+
+
+/* أقل من 350 */
+@media (max-width: 350px) {
+  .logo img {
+    max-width: 150px;
+  }
+  #langBtn, 
+  #langBtnMobile {
+    font-size: 10px;
+    padding: 4px 12px;
+  }
+}
+
+/* أقل من 290 */
+@media (max-width: 300px) {
+  .logo img {
+    max-width: 100px;
+  }
+  #langBtn, 
+  #langBtnMobile {
+    font-size: 8px;
+    padding: 4px 12px;
+  }
+}
+
